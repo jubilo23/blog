@@ -87,6 +87,35 @@ color: rgb(208, 206, 216);
     display: flex;
     align-items: center;
   }*/
+
+
+
+  * {
+margin:0;
+padding:0;
+}
+
+#columna1 {
+position:absolute;
+top:90px;
+left:10px;
+width:300px;
+height: 400px;
+margin-top:10px;
+background-color: #2eb398;
+/*border-color: rgb(10, 0, 0);
+background-color: #2eb398;
+border-width: 3px;
+border-style: solid;*/
+
+}
+#columna2 {
+margin-left:320px;
+margin-right:20px;
+margin-top:120px;
+/*background-color:#ecece8f3;*/
+}
+
 </style>
 
 <html>
@@ -110,6 +139,34 @@ color: rgb(208, 206, 216);
           src="./assets/img/user.png"
         />
       </div>
+
+      <div id="columna1" align="center">
+        <button mat-button color="primary">Administración</button><br>
+        <button mat-raised-button>Basic</button><br>
+        <button mat-raised-button color="accent">Accent</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button><br>
+        <button>Prueba1</button>
+      </div>
+
+      <div id="columna2">
+        <div align="center"><h2>¿Cómo habla Dios a tu vida?</h2></div>
+        Muestra contenido...
+        <button mat-raised-button color="accent">Accent</button>
+        <div>
+          <button mat-raised-button>Basic</button>
+          <button mat-raised-button color="primary">Primary</button>
+          <button mat-raised-button color="accent">Accent</button>
+          <button mat-raised-button color="warn">Warn</button>
+          <button mat-raised-button disabled>Disabled</button>
+        </div>
+      </div>
+
+      
 
 
     <div class="footer">
