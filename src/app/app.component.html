@@ -5,6 +5,10 @@
     <title>Jubilo y Adoracion</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="app.component.css">
+    <script>
+      var time = new Date();
+      console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+      </script>
 
     <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
     <!--[if lt IE 9]>
@@ -13,26 +17,44 @@
   </head>
 
   <body>
+    
     <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
 
     <header>
-      <h1>Iglesia Cristiana Pentecostes Júbilo y Adoración</h1>
+      <div align="center">
+        <img
+        width="75"
+        alt="Angular Logo"
+        src="./assets/img/paloma.png"
+      />
+      </div><h1>Iglesia Cristiana Pentecostes Júbilo y Adoración</h1>
     </header>
 
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <!--<li><a href="#">Inicio</a></li>
         <li><a href="#">Contacto</a></li>
         <li><a href="#">Equipo</a></li>
-        <li><a href="#">Dirección</a></li>
+        <li><a href="#">Dirección</a></li> -->
       </ul>
      </nav>
 
     <!-- Aquí está el contenido principal de nuestra página -->
     <main>
 
+      
       <!-- Contiene un artículo -->
       <article>
+        <div class="fecha">Bienvenido
+          <script>
+            let d = new Date();
+            document.body.innerHTML = "Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+            ""
+            </script>
+        </div>
+
+       
+
         <h2>Título del artículo</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
@@ -54,7 +76,6 @@
       <aside>
         <h4>Contenido</h4>
 
-        
           <button class="buttonMenu" mat-raised-button color="accent">Administración</button><br>
           <button class="buttonMenu" mat-raised-button color="accent">Cultos</button><br>
           <button class="buttonMenu" mat-raised-button color="accent">Programas de mes</button><br>
@@ -75,8 +96,30 @@
     <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
 
     <footer>
-      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+      <h4>Contactanos tambien por Redes Sociales</h4>
+      <img
+          width="40"
+          height="40"
+          alt="Angular Logo"
+          src="./assets/img/whatsap.png"
+        />
+        <img
+          width="43"
+          height="43"
+          alt="Angular Logo"
+          src="./assets/img/facebook.png"
+        />
+        <img
+          width="40"
+          height="40"
+          alt="Angular Logo"
+          src="./assets/img/instagram.png"
+        /><br>
+        Copyright © 2022 Júbilo y Adoración - Todos los derechos reservados.<br><br>
+        Dirección:  Calle Llano Verde, Ref. Avenida Del Puerto, Calle Ignacio Allende, Calle José López Portillo
+        CP. 56350 - Chimalhuacán, Chimalhuacán, Estado de México. Tel. (55)51117305<br><br>
     </footer>
 
+  
   </body>
 </html>

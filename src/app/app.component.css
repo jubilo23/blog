@@ -25,7 +25,7 @@ html, body {
   }
   
   h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 10px black;
@@ -60,9 +60,8 @@ html, body {
   }
   
   nav {
-    height: 50px;
-    background-color: #1d9dbd;
-    display: flex;
+    height: 25px;
+    background: scroll;
     margin-bottom: 10px;
     
   }
@@ -78,7 +77,7 @@ html, body {
   nav li {
     display: inline;
     text-align: center;
-    flex: 1;
+    flex: 2px;
   }
   
   nav a {
@@ -87,6 +86,7 @@ html, body {
     text-transform: uppercase;
     text-decoration: none;
     color: azure;
+    font-weight: bold;
   }
   
   nav form {
@@ -136,12 +136,26 @@ html, body {
   
   footer {
     margin-top: 10px;
+    text-align: center;
+    background-color: rgba(17, 69, 138, 0.877);
+    color: rgb(231, 223, 247);
+    font-size: 15px;
   }
 
 
   .buttonMenu{
     height: 50px;
-    width: 200px;
+    width: 160px;
     top: 0px;
     margin-top: 8px;
   }
+
+  .fecha{
+      text-align: right;
+      font-size: 16px;
+  }
+
+  .timepage{text-align:center;
+    width:200px;font-size:40px;border:1px solid #56aaf3;padding:6px;margin:12px 0 12px 0;
+    color: #0b053b;
+}
