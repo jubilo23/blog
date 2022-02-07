@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CultosComponent } from './cultos/cultos.component';
 
-const routes: Routes = [];
+
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
