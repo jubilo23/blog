@@ -1,105 +1,147 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-kerning: auto;
-  }
-  html {
-    font-size: 10pt;
-    line-height: 1.4;
-    font-weight: 400;
-    font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-    -webkit-text-size-adjust: 100%;
-  }
-  body {
+html, body {
     margin: 0;
-    background: #eee;
-  }
-  section {
-    height: 100vh;
-    background: coral;
-  }
-  section span {
-    margin: 0;
-    font-size: 400%;
-    text-align: center;
-    line-height: 1;
-    padding-top: calc(50vh - 20pt);
-    display: block;
-    font-weight: 700;
-  }
-  header {
-    width: 100%;
-    padding: 1em;
-    font-size: 140%;
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    transition: opacity .2s ease-in-out;
-    text-align: center;
-  }
-  header h1 {
-    font-weight: 600;
-    display: inline;
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-  }
-  nav a {
-    display: inline-block;
-    outline: none;
-    text-decoration: none;
-    opacity: .7;
-    padding: 0 .5em;
-    color: black;
-    transition: opacity .2s ease-in-out;
-  }
-  nav a:hover,
-  nav a:focus {
-    opacity: 1;
-  }
-  article {
-    margin: 5em auto 0;
-    padding: 1em;
-    font-size: 140%;
-    max-width: 800px;
-    background: white;
-    box-shadow: rgba(0,0,0,.05) 0 3px 15px;
-  }
-  article p {
-    margin: 0;
-    color: #333;
-  }
-  article p + p {
-    margin-top: .7em;
-  }
-  @media (min-width: 500px) {
-    header {
-      text-align: left;
-    }
-    nav {
-      float: right;
-    }
-    article {
-      margin: 3.5em auto 0;
-      padding: 2em;
-    }
-  }
-  @media (min-width: 800px) {
-    article {
-      margin: 3.5em auto;
-    }
+    padding: 1px;
   }
   
-  /* And here's the magic! EQCSS.js required */
-  @element html, body and (min-scroll-y: 100vh) {
-    header {
-      position: fixed;
-      top: 0;
-      background: white;
-      box-shadow: rgba(0,0,0,.05) 0 3px 15px;
-    }
+  html {
+    font-size: 10px;
+    background-color: #0b053b;
+  }
+  
+  body {
+    width: 98%;
+    margin: 0 auto;
+  }
+  
+  /* || typography */
+  
+  h1, h2, h3 {
+    color: #2a2a2a;
+  }
+  
+  p, input, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2a2a2a;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  p, li {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  
+  /* || header layout */
+  
+  nav, article, aside, footer {
+    background-color: white;
+    padding: 1%;
+  }
+  
+  nav {
+    height: 50px;
+    background-color: #1d9dbd;
+    display: flex;
+    margin-bottom: 10px;
+    
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    
+  }
+  
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  
+  nav a {
+    display: contents;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: azure;
+  }
+  
+  nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+  }
+  
+  input {
+    font-size: 1.6rem;
+    height: 32px;
+  }
+  
+  input[type="search"] {
+    flex: 3;
+  }
+  
+  input[type="submit"] {
+    flex: 1;
+    margin-left: 1rem;
+    background: #333;
+    border: 0;
+    color: white;
+  }
+  
+  /* || main layout */
+  
+  main {
+    display: flex;
+  }
+  
+  article {
+    flex: 4;
+  }
+  
+  aside {
+    flex: 0;
+    margin-left: 10px;
+    background-color: #2eb398;
+  }
+  
+  aside li {
+    padding-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }
+
+
+  .buttonMenu{
+    height: 50px;
+    width: 200px;
+    top: 0px;
+    margin-top: 8px;
   }
