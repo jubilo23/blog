@@ -7,7 +7,6 @@ html, body {
   html {
     font-size: 10px;
     background-color: #0b1b2c;
-    position: absolute;
   }
   
   body {
@@ -131,6 +130,7 @@ html, body {
   aside {
     flex: 0;
     margin-left: 10px;
+    width: max-content;
     background-color: #2eb398;
   }
   
