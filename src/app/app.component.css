@@ -1,16 +1,19 @@
 html, body {
     margin: 0;
     padding: 1px;
+    min-width: 500px;
   }
   
   html {
     font-size: 10px;
     background-color: #0b1b2c;
+    position: absolute;
   }
   
   body {
     width: 98%;
     margin: 0 auto;
+    
   }
   
   /* || typography */
