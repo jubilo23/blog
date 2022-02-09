@@ -11,13 +11,27 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProgramasComponent } from './programas/programas.component';
 import { ListPredicaComponent } from './list-predica/list-predica.component';
 import {MatTableModule} from '@angular/material/table';
+import { ListDirigirComponent } from './list-dirigir/list-dirigir.component';
+import { ListTalentoComponent } from './list-talento/list-talento.component';
+import { ListAseoComponent } from './list-aseo/list-aseo.component';
+import { ListSchoolSundayComponent } from './list-school-sunday/list-school-sunday.component';
+import { BautizosComponent } from './bautizos/bautizos.component';
+import { LiderazgoComponent } from './liderazgo/liderazgo.component';
+import { VaronesComponent } from './varones/varones.component';
+import { FemenilComponent } from './femenil/femenil.component';
+import { OrganigramaComponent } from './organigrama/organigrama.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'cultos', component: CultosComponent },
   { path: 'admin', component: AdministracionComponent },
   { path: 'list-pred', component: ListPredicaComponent },
-  { path: 'programs', component: ProgramasComponent }
+  { path: 'programs', component: ProgramasComponent },
+  { path: 'list-direction', component: ListDirigirComponent },
+  { path: 'list-talent', component: ListTalentoComponent },
+  { path: 'list-aseo', component: ListAseoComponent},
+  { path: 'list-school', component: ListSchoolSundayComponent},
+  { path: 'bautizo', component: BautizosComponent}
 ];
 @NgModule({
   declarations: [
@@ -25,7 +39,16 @@ const routes: Routes = [
     CultosComponent,
     AdministracionComponent,
     ProgramasComponent,
-    ListPredicaComponent
+    ListPredicaComponent,
+    ListDirigirComponent,
+    ListTalentoComponent,
+    ListAseoComponent,
+    ListSchoolSundayComponent,
+    BautizosComponent,
+    LiderazgoComponent,
+    VaronesComponent,
+    FemenilComponent,
+    OrganigramaComponent
   ],
   imports: [
     BrowserModule,

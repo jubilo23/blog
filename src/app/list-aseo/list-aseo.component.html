@@ -1,4 +1,4 @@
-<h3>Lista de Predicadores</h3>
+<h3>Lista para aseo de la Iglesia</h3>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="position">
@@ -14,11 +14,6 @@
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef> Fecha </th>
       <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-    </ng-container>
-  
-    <ng-container matColumnDef="turn">
-      <th mat-header-cell *matHeaderCellDef> Turno </th>
-      <td mat-cell *matCellDef="let element"> {{element.turn}} </td>
     </ng-container>
   
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
