@@ -31,7 +31,8 @@ const routes: Routes = [
   { path: 'list-talent', component: ListTalentoComponent },
   { path: 'list-aseo', component: ListAseoComponent},
   { path: 'list-school', component: ListSchoolSundayComponent},
-  { path: 'bautizo', component: BautizosComponent}
+  { path: 'bautizo', component: BautizosComponent},
+  { path: 'organigram', component: OrganigramaComponent}
 ];
 @NgModule({
   declarations: [
