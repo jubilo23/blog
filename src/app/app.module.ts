@@ -20,9 +20,10 @@ import { LiderazgoComponent } from './liderazgo/liderazgo.component';
 import { VaronesComponent } from './varones/varones.component';
 import { FemenilComponent } from './femenil/femenil.component';
 import { OrganigramaComponent } from './organigrama/organigrama.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/cultos', pathMatch: 'full' },
   { path: 'cultos', component: CultosComponent },
   { path: 'admin', component: AdministracionComponent },
   { path: 'list-pred', component: ListPredicaComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'list-aseo', component: ListAseoComponent},
   { path: 'list-school', component: ListSchoolSundayComponent},
   { path: 'bautizo', component: BautizosComponent},
-  { path: 'organigram', component: OrganigramaComponent}
+  { path: 'organigram', component: OrganigramaComponent},
+  { path: 'login', component: LoginComponent}
 ];
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ const routes: Routes = [
     LiderazgoComponent,
     VaronesComponent,
     FemenilComponent,
-    OrganigramaComponent
+    OrganigramaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -68,3 +71,4 @@ const routes: Routes = [
 export class AppModule { 
   
 }
+

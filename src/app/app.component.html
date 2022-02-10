@@ -5,10 +5,8 @@
     <title>Jubilo y Adoracion</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="app.component.css">
-    <script src="./assets/js/file.js">
-      var time = new Date();
-      console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
-      </script>
+    <script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="assets/js/file.js"></script>
 
   </head>
 
@@ -42,9 +40,11 @@
       
       <!-- Contiene un artículo -->
       <article>
-        <div class="fecha">Bienvenido
+        <div class="fecha">
+          {{greeting}}
         </div>
-
+            
+            
        
 
         <!--<h2>Título del artículo</h2>-->
