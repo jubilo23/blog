@@ -7,6 +7,9 @@ html, body {
   html {
     font-size: 10px;
     background-color: #0b1b2c;
+    /*background-color: rgb(1, 6, 8);
+    background-color: rgb(50, 140, 146);*/
+    height: max-content;
   }
   
   body {
@@ -133,7 +136,10 @@ html, body {
     flex: 0;
     margin-left: 10px;
     width: max-content;
-    background-color: #2eb398;
+    /*background-color: #2eb398;*/
+    /*background-color: rgb(50, 140, 146);*/
+    /*background-color: #4b4e4e;*/
+    background-color: #4aa895;
   }
   
   aside li {
@@ -143,7 +149,9 @@ html, body {
   footer {
     margin-top: 10px;
     text-align: center;
-    background-color: rgba(17, 69, 138, 0.877);
+    /*background-color: rgba(17, 69, 138, 0.877);
+    background-color: rgba(68, 93, 122, 0.877);*/
+    background-color: rgba(32, 103, 116, 0.877);
     color: rgb(231, 223, 247);
     font-size: 15px;
   }
@@ -153,8 +161,9 @@ html, body {
     height: 50px;
     width: 160px;
     top: 0px;
-    margin-top: 8px;
-    border-radius: 50px;
+    background-color: #ec0867ea;
+    margin-top: 8px;    
+    border-radius: 20px;
   }
 
   .fecha{
