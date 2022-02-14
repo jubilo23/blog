@@ -27,10 +27,35 @@
 
     <nav>
       <ul>
-        <!--<li><a href="#">Inicio</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Equipo</a></li>
-        <li><a href="#">Dirección</a></li> -->
+        <button mat-icon-button class="white-icon" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>Menu
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/home">
+            <mat-icon>dialpad</mat-icon>
+            <span>Inicio</span>
+          </button>
+          <button mat-menu-item routerLink="/admin">
+            <mat-icon>voicemail</mat-icon>
+            <span>Administración</span>
+          </button>
+          <button mat-menu-item routerLink="/login">
+            <mat-icon>notifications_off</mat-icon>
+            <span>Iniciar sesión</span>
+          </button>
+        </mat-menu>
+        <!--<li>
+          <mat-icon aria-hidden="false" class="white-icon" aria-label="Example home icon">home</mat-icon>
+          <a href="/home">Inicio</a>
+        </li>
+        <li>
+          <mat-icon aria-hidden="false" class="white-icon" aria-label="Example home icon">settings icon</mat-icon>
+          <a href="/admin">Administración</a>
+        </li>
+        <li>
+          <mat-icon aria-hidden="false" class="white-icon">account_circle</mat-icon>
+          <a href="/login">Iniciar Sesión</a>
+        </li> -->
       </ul>
      </nav>
 
@@ -93,29 +118,35 @@
 
     <footer>
       <h4>Contactanos tambien por Redes Sociales</h4>
-      <img
+      <a href="https://web.whatsapp.com/">
+        <img
           width="40"
           height="40"
           alt="Angular Logo"
           src="./assets/img/whatsap.png"
         />
+      </a>
+      <a href="https://m.facebook.com/Iglesia-J%C3%BAbilo-Y-Adoraci%C3%B3n-1626468147649568/">
         <img
           width="43"
           height="43"
           alt="Angular Logo"
           src="./assets/img/facebook.png"
         />
+      </a>
+      <a href="https://z-p15.www.instagram.com/accounts/login/?next=/p/CK8SOUgBxgo/&hl=es-la">
         <img
           width="40"
           height="40"
           alt="Angular Logo"
           src="./assets/img/instagram.png"
-        /><br>
-        Copyright © 2022 Júbilo y Adoración - Todos los derechos reservados.<br><br>
+        />
+      </a>
+        <br>
+        Copyright © 2022 Júbilo y Adoración<br><br>
         Dirección:  Calle Llano Verde, Ref. Avenida Del Puerto, Calle Ignacio Allende, Calle José López Portillo
         CP. 56350 - Chimalhuacán, Chimalhuacán, Estado de México. Tel. (55)51117305<br><br>
     </footer>
 
-  
   </body>
 </html>

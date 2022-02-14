@@ -1,17 +1,22 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
 <div class="login-page">
     <div class="form">
-      <form class="register-form">
+      <!--<form class="register-form">
         <input type="text" placeholder="usuario"/>
         <input type="password" placeholder="contraseña"/>
         <input type="text" placeholder="correo"/>
         <button>Crear</button>
         <p class="message">¿Ya estas registrado? <a href="#">Iniciar Sesion</a></p>
-      </form>
+      </form>-->
       <form class="login-form">
-        <input type="text" placeholder="usuario"/>
-        <input type="password" placeholder="contraseña"/>
-        <button onclick="login()">Ingresar</button>
+        <input type="text" name="txtusuario" [(ngModel)]="usuario" placeholder="Usuario"> 
+        <input type="password" name="txtpassword" [(ngModel)]="password" placeholder="Password">
+        <button type="button" (click)="login()">Ingresar</button> 
         <p class="message">¿No estas registrado? <a href="#">Crear una cuenta</a></p>
+
+        <h2>{{resultado}}</h2> 
       </form>
     </div>
   </div>
+
+  <input type="text" name="txtusuario2" required>

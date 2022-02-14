@@ -30,7 +30,7 @@ html, body {
   }
   
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     color: rgb(203, 229, 231);
     /*text-shadow: 2px 2px 10px black;*/
@@ -49,7 +49,7 @@ html, body {
   }
 
   h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     color: aliceblue;
   }
@@ -71,7 +71,13 @@ html, body {
     height: 25px;
     background: scroll;
     margin-bottom: 10px;
-    
+    margin-top: 50px;
+    background-color: #0d887e;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(206, 194, 194);
   }
   
   nav ul {
@@ -79,18 +85,20 @@ html, body {
     list-style-type: none;
     flex: 1;
     display: flex;
-    
   }
   
   nav li {
     display: inline;
     text-align: center;
-    flex: 2px;
+    flex: 2;
+    display: flex;
+    align-items: center;
+   
   }
   
   nav a {
     display: contents;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     color: azure;
@@ -174,4 +182,12 @@ html, body {
   .timepage{text-align:center;
     width:200px;font-size:40px;border:1px solid #56aaf3;padding:6px;margin:12px 0 12px 0;
     color: #0b053b;
+}
+
+.white-icon {
+  color: white;
+}
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.white-icon svg {
+  fill: white;
 }

@@ -22,6 +22,9 @@ import { FemenilComponent } from './femenil/femenil.component';
 import { OrganigramaComponent } from './organigrama/organigrama.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 const routes: Routes = [
@@ -38,6 +41,7 @@ const routes: Routes = [
   { path: 'organigram', component: OrganigramaComponent},
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent}
+  
 ];
 @NgModule({
   declarations: [
@@ -64,6 +68,9 @@ const routes: Routes = [
     NoopAnimationsModule,
     MatButtonModule,
     MatTableModule,
+    FormsModule,
+    MatIconModule,
+    MatMenuModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
